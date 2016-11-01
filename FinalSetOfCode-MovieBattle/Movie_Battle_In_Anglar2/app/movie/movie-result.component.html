@@ -1,0 +1,25 @@
+﻿<div class='col-sm-12 col-sm-offset-0'>
+    
+    <div *ngIf="tie==false">
+        <movies-iterator *ngFor="#movie of movies; #indx=index" [indx]="indx" [moviesInfo]="movie" [ratingVisible]="true" [comparision]="false" class='col-sm-6'>
+        </movies-iterator>
+    </div>
+
+    <div *ngIf="tie==true">
+        <h2>Its a Tie !</h2>
+    </div>
+
+    <div class='col-sm-12'>
+        <button type='button' id="btnStartOver" (click)="onHome()" class='btn btn-lg btn-success'>
+            Start Over
+        </button>;
+    </div>
+</div>
+
+<style>
+    div {
+        text-align: center;
+    }
+</style>
+
+

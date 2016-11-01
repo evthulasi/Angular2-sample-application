@@ -1,0 +1,28 @@
+﻿
+<div class='col-sm-12 col-sm-offset-0'>
+
+    <movies-iterator *ngFor="#movie of movies; #indx=index" [indx]="indx" [moviesInfo]="movie" [ratingVisible]="false" [comparision]="true" class='col-sm-6'>
+    </movies-iterator>
+
+        <div class='col-sm-8 col-sm-offset-5'>
+            <div class='col-sm-8'>
+                <button type='button' (click)="onMovieResult()" id="btnInitiate" class='btn btn-lg btn-success'>
+                    Initiate Battle!
+                </button>
+            </div>
+            <div class='col-sm-8'>
+                <button type='button' id="btnReselect" (click)="onMovieOne()"  class='btn btn-lg btn-danger'>
+                    Reselect Movies
+                </button>
+            </div>
+        </div>
+</div>
+
+<style>
+    .btn {
+        margin-bottom
+        :16px;
+    }
+</style>
+
+

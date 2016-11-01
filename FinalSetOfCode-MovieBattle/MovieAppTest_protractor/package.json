@@ -1,0 +1,44 @@
+{
+  "name": "Movie-Battle-test",
+  "version": "0.0.1",
+  "author": "Thulasi",
+  "description": "A Movie-Battle app with Protractor tests",
+  "scripts": {
+    "start": "node app/expressserver.js",
+    "test": "node_modules/.bin/protractor test/conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kenzitron/protractor-jasmine2-html-reporter"	
+  },
+  "keywords": [
+    "jasmine2",
+    "protractor",
+    "reporter",
+    "html",
+    "test",
+    "functional testing",
+    "screenshots",
+    "end2end",
+    "bdd"
+  ],
+  "author": "Thulasi",
+  "license": "EVTR",
+  "bugs": {
+    "url": "https://github.com/Kenzitron/protractor-jasmine2-html-reporter/issues"
+  },
+  "dependencies": {
+    "express": "~3.4.0",
+    "protractor": "2.1.0",
+    "mkdirp": "~0.3.5",
+    "q": "1.0.0",
+    "firefox-profile": "0.3.4",
+	"hat": "0.0.3",
+    "lodash": "^4.0.0",
+    "string.prototype.startswith": "^0.2.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "protractor": "^3.1.1"
+  }
+}
