@@ -1,0 +1,22 @@
+﻿<div class="jumbotron col-sm-12 text-center">
+    <h1>{{movieCount}}</h1>
+    <div classname="col-sm-12">
+        <form [ngFormModel]="movieForm" (ngSubmit)="doMovie($event)">
+            <div class="row">
+                <div class="form-group col-sm-4 col-sm-offset-4">
+                    <input ngControl="movieName" class='form-control' id="movieName"
+                           placeholder='Movie name'
+                           type='text' required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-4 col-sm-offset-4">
+                    <button class="btn btn-block btn-success" id="btnSubmit"
+                            type="submit">
+                        Continue
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
